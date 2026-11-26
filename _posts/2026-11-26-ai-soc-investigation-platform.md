@@ -1,9 +1,8 @@
-
 ---
 title: AI SOC Investigation Platform
 date: 2026-11-26
 categories: [Cybersecurity]
-tags: [ai, soc, splunk, incident-response]
+tags: [AI, SOC, Splunk, Incident Response]
 ---
 
 ## Overview
