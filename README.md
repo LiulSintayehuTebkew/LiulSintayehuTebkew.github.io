@@ -5,7 +5,7 @@ A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student.
 ## Structure
 
 - `index.html` — landing page with professional focus, categories, and recent work.
-- `_tabs/` — About, Projects, Notes, and Tags pages.
+- `_tabs/` — About, Projects, and Notes pages.
 - `_posts/` — project write-ups. Add new posts with `categories` slugs from `portfolio_categories` in `_config.yml`.
 - `_notes/` — Medium-style notes. Each Markdown file becomes a note page.
 - `projects/` — category pages nested under `/projects/`.

@@ -14,7 +14,7 @@ layout: default
         <li><a class="chip chip-accent" href="{{ '/projects/' | relative_url }}{{ category }}/">{{ cat.name | default: category | escape }}</a></li>
       {% endfor %}
       {% for tag in page.tags %}
-        <li><a class="chip" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag | escape }}</a></li>
+        <li><span class="chip">#{{ tag | escape }}</span></li>
       {% endfor %}
     </ul>
   </header>
