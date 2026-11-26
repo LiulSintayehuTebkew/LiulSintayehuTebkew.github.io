@@ -79,7 +79,7 @@ shell: false
       <article class="bento-card bento-card--wide reveal">
         <span class="bento-index">04 / CRYPTOGRAPHY</span>
         <h3>Cryptography</h3>
-        <p>Identity, authentication, privacy-preserving technologies, and applied cryptography.</p>
+        <p>Post-quantum cryptography, encryption, digital signatures, authentication, data integrity, and secure key exchange.</p>
         <ul class="bento-tags"><li>Cryptography</li><li>Identity</li><li>Privacy</li></ul>
       </article>
     </div>
