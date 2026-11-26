@@ -990,11 +990,21 @@ a.chip:hover {
   transform: none;
 }
 
+/* The first section after the hero should be visible as soon as you scroll. */
+.hero-modern + .section {
+  padding-top: 1rem;
+}
+
+.hero-modern + .section .reveal {
+  opacity: 1;
+  transform: none;
+}
+
 .hero-modern {
   position: relative;
   align-items: start;
   gap: clamp(2.5rem, 6vw, 6rem);
-  padding-block: 0 clamp(3rem, 8vw, 7rem);
+  padding-block: 0 clamp(1rem, 3vw, 2.5rem);
 }
 
 .hero-modern::before {
