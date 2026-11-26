@@ -10,10 +10,10 @@ shell: false
 <div class="container">
   <section class="about-hero">
     <div class="reveal">
-      <p class="eyebrow">CYBERSECURITY · DIGITAL TRUST · AI FOR SECURITY</p>
+      <p class="eyebrow">CYBERSECURITY · CRYPTOGRAPHY · AI FOR SECURITY</p>
       <h1>About</h1>
       <p class="about-statement">Building practical security skills through research and hands-on projects.</p>
-      <p class="lede about-lede">I'm Liul Sintayehu Tebkew, a CyberMACS master's student with a Computer Science background, focused on security operations, threat detection, network security, and digital trust.</p>
+      <p class="lede about-lede">I'm Liul Sintayehu Tebkew, a CyberMACS master's student with a Computer Science background, focused on security operations, threat detection, network security, and cryptography.</p>
     </div>
 
     <aside class="about-portrait reveal" aria-label="Profile snapshot">
@@ -40,7 +40,7 @@ shell: false
       <div class="prose reveal">
         I studied **Computer Science at Arba Minch University Institute of Technology, Ethiopia**, finishing first in my class in 2023 with a **3.97/4.00 GPA** and earning the university's gold medal.
 
-        I am now pursuing the **Erasmus Mundus Joint Master’s in Applied Cybersecurity (CyberMACS)**. My studies have taken me from **Kadir Has University in Istanbul** to **Ss. Cyril and Methodius University (UKIM) in Skopje**, where I am developing a deeper foundation in cybersecurity, cryptography, privacy, and digital trust.
+        I am now pursuing the **Erasmus Mundus Joint Master’s in Applied Cybersecurity (CyberMACS)**. My studies have taken me from **Kadir Has University in Istanbul** to **Ss. Cyril and Methodius University (UKIM) in Skopje**, where I am developing a deeper foundation in cybersecurity, cryptography, and privacy.
       </div>
 
       <aside class="fact-panel reveal">
@@ -77,8 +77,8 @@ shell: false
         <ul class="bento-tags"><li>Python</li><li>LLMs</li><li>Automation</li></ul>
       </article>
       <article class="bento-card bento-card--wide reveal">
-        <span class="bento-index">04 / TRUST</span>
-        <h3>Digital Trust &amp; Cryptography</h3>
+        <span class="bento-index">04 / CRYPTOGRAPHY</span>
+        <h3>Cryptography</h3>
         <p>Identity, authentication, privacy-preserving technologies, and applied cryptography.</p>
         <ul class="bento-tags"><li>Cryptography</li><li>Identity</li><li>Privacy</li></ul>
       </article>
@@ -118,7 +118,7 @@ shell: false
       <div class="section-head">
         <div>
           <h3>Let’s connect</h3>
-          <p>Interested in cybersecurity, SOC work, digital trust, or collaborating on practical projects?</p>
+          <p>Interested in cybersecurity, SOC work, cryptography, or collaborating on practical projects?</p>
         </div>
         <a class="btn" href="https://github.com/LiulSintayehuTebkew" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
       </div>
