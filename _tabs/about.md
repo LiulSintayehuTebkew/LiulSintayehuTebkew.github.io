@@ -13,17 +13,17 @@ shell: false
       <p class="eyebrow">CYBERSECURITY · DIGITAL TRUST · AI FOR SECURITY</p>
       <h1>About</h1>
       <p class="about-statement">Building practical security skills through research and hands-on projects.</p>
-      <p class="lede about-lede">I'm Liul Sintayehu Tebkew, a Computer Science graduate and CyberMACS master's student focused on security operations, threat detection, network security, and digital trust.</p>
+      <p class="lede about-lede">I'm Liul Sintayehu Tebkew, a CyberMACS master's student with a Computer Science background, focused on security operations, threat detection, network security, and digital trust.</p>
     </div>
 
     <aside class="about-portrait reveal" aria-label="Profile snapshot">
       <div class="portrait-ring"><span class="portrait-initials">LT</span></div>
       <div class="portrait-meta">
         <strong>Liul Sintayehu Tebkew</strong>
-        <span>Cybersecurity graduate &amp; researcher</span>
+        <span>Cybersecurity master's student &amp; researcher</span>
       </div>
       <ul class="portrait-list">
-        <li>Computer Science graduate</li>
+        <li>BSc in Computer Science</li>
         <li>CyberMACS master's student</li>
         <li>Based in Skopje, North Macedonia</li>
       </ul>

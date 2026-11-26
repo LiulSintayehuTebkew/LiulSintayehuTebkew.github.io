@@ -286,6 +286,10 @@ main {
   padding-block: 3.5rem 5rem;
 }
 
+.home-main {
+  padding-top: 1.5rem;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
@@ -977,10 +981,18 @@ a.chip:hover {
   transform: none;
 }
 
+/* Hero content is above the fold, so it should never start hidden. */
+.hero-copy.reveal,
+.hero-panel.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 .hero-modern {
   position: relative;
+  align-items: start;
   gap: clamp(2.5rem, 6vw, 6rem);
-  padding-block: clamp(0.5rem, 2vw, 1.5rem) clamp(3rem, 8vw, 7rem);
+  padding-block: 0 clamp(3rem, 8vw, 7rem);
 }
 
 .hero-modern::before {

@@ -1,6 +1,6 @@
 # Liul Sintayehu Tebkew — Portfolio
 
-A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student. The site is built with the custom **Sentinel** theme: no service worker, no external CSS/JS/CDNs, and no analytics by default.
+A modern, dependency-free Jekyll portfolio for a cybersecurity master's student. The site is built with the custom **Sentinel** theme: no service worker, no external CSS/JS/CDNs, and no analytics by default.
 
 ## Structure
 
