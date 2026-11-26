@@ -1,7 +1,7 @@
 ---
 title: Phishing Email Analysis Compilation
 date: 2026-11-26
-categories: [cybersecurity, email-security, threat-detection]
+categories: [cybersecurity]
 tags: [Phishing, Email Security, Threat Intelligence, Email Analysis, Cybersecurity]
 ---
 

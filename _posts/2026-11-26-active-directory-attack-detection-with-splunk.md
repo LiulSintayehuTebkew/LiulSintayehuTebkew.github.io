@@ -1,7 +1,7 @@
 ---
 title: Active Directory Attack Detection with Splunk
 date: 2026-11-26
-categories: [cybersecurity, security-operations, threat-detection, detection-engineering]
+categories: [cybersecurity]
 tags: [Active Directory, Splunk, SIEM, Sysmon, Threat Detection]
 ---
 

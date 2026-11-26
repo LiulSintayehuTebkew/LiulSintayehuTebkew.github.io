@@ -1,7 +1,7 @@
 ---
 title: Suspicious PowerShell Execution Attack Detection
 date: 2026-11-26
-categories: [cybersecurity, security-operations, threat-detection, detection-engineering]
+categories: [cybersecurity]
 tags: [PowerShell, Windows Security, Threat Detection, SIEM, Incident Response]
 ---
 

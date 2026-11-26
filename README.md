@@ -5,8 +5,9 @@ A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student.
 ## Structure
 
 - `index.html` — landing page with professional focus, categories, and recent work.
-- `_tabs/` — About, Projects, Categories, Archives, and Tags pages.
+- `_tabs/` — About, Projects, Categories, Notes, and Tags pages.
 - `_posts/` — project write-ups. Add new posts with `categories` slugs from `portfolio_categories` in `_config.yml`.
+- `_notes/` — Medium-style notes. Each Markdown file becomes a note page.
 - `categories/` — explicit category archive pages.
 - `_layouts/` and `_includes/` — the Sentinel theme.
 - `assets/css/style.css` and `assets/js/main.js` — all styling and behavior, self-hosted.
@@ -16,10 +17,30 @@ A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student.
 Categories are defined once in `_config.yml` under `portfolio_categories`. Each entry has a `slug`, display `name`, `icon`, and `description`. To file a post or project under a category, add the slug to its `categories` list:
 
 ```yaml
-categories: [cybersecurity, security-operations, threat-detection]
+categories: [cybersecurity]
 ```
 
+The four current categories are `cybersecurity`, `networking`, `salesforce`, and `data-analysis`. For now, only Cybersecurity has projects; the others show friendly empty states.
+
 The Projects page uses the same slugs for its category filters.
+
+## Notes
+
+Add a Markdown file to `_notes/` to publish a note. Use this front matter as a template:
+
+```yaml
+---
+title: "What I learned from investigating a phishing email"
+date: 2026-11-26
+description: "A short summary that appears on the Notes index."
+category: cybersecurity
+tags: [Phishing, Email Security, Investigation]
+---
+
+Your note starts here. Use headings, lists, and links like a normal article.
+```
+
+Notes appear on `/notes/` automatically, newest first.
 
 ## Security choices
 

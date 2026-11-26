@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign note_category = site.portfolio_categories | where: 'slug', page.category | first %}
+{% assign words = page.content | number_of_words %}
+{% assign minutes = words | divided_by: 220 | plus: 1 %}
+
+<article class="article container">
+  <header class="article-header">
+    <a class="back-link" href="{{ '/notes/' | relative_url }}">← All notes</a>
+    <p class="card-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+      <span>{{ minutes }} min read</span>
+      {% if page.category %}<span class="chip chip-accent">{{ note_category.name | default: page.category | escape }}</span>{% endif %}
+    </p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}
+      <p class="lede">{{ page.description | escape }}</p>
+    {% endif %}
+    {% if page.tags %}
+      <ul class="chip-list">
+        {% for tag in page.tags %}
+          <li class="chip">#{{ tag | escape }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  <div class="prose note-prose">
+    {{ content }}
+  </div>
+
+  <footer class="article-footer">
+    <a class="btn btn-secondary" href="{{ '/notes/' | relative_url }}">Back to notes</a>
+  </footer>
+</article>

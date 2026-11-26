@@ -18,36 +18,27 @@ portfolio_categories:
   - slug: cybersecurity
     name: Cybersecurity
     icon: CS
-    description: The complete collection of security projects, labs, and investigations.
-  - slug: security-operations
-    name: Security Operations
-    icon: SO
-    description: SIEM monitoring, alert triage, incident response, and SOC workflows.
-  - slug: threat-detection
-    name: Threat Detection
-    icon: TD
-    description: Detection engineering and investigation of suspicious activity.
-  - slug: detection-engineering
-    name: Detection Engineering
-    icon: DE
-    description: Practical detection logic for Windows, Active Directory, and SIEM data.
-  - slug: ai-security
-    name: AI for Security
-    icon: AI
-    description: Local language models and automation applied to security analysis.
-  - slug: network-security
-    name: Network Security
-    icon: NS
-    description: Packet analysis, malware traffic analysis, and network defense.
-  - slug: email-security
-    name: Email Security
-    icon: ES
-    description: Phishing analysis, email header inspection, and message threat intelligence.
+    description: Security projects, labs, monitoring, and investigation write-ups.
+  - slug: networking
+    name: Networking
+    icon: NW
+    description: Networking projects and infrastructure work will appear here.
+  - slug: salesforce
+    name: Salesforce
+    icon: SF
+    description: Salesforce projects and platform work will appear here.
+  - slug: data-analysis
+    name: Data Analysis
+    icon: DA
+    description: Data analysis projects and write-ups will appear here.
 
 collections:
   tabs:
     output: true
     sort_by: order
+  notes:
+    output: true
+    sort_by: date
 
 defaults:
   - scope:
@@ -62,6 +53,12 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      permalink: /notes/:title/
 
 kramdown:
   syntax_highlighter: rouge
