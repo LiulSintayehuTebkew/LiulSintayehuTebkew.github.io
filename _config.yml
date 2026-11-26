@@ -58,7 +58,7 @@ defaults:
       type: notes
     values:
       layout: note
-      permalink: /notes/:title/
+      permalink: /posts/:title/
 
 kramdown:
   syntax_highlighter: rouge

@@ -7,7 +7,7 @@ layout: default
 
 <article class="article container">
   <header class="article-header">
-    <a class="back-link" href="{{ '/notes/' | relative_url }}">← All notes</a>
+    <a class="back-link" href="{{ '/posts/' | relative_url }}">← All posts</a>
     <p class="card-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
       <span>{{ minutes }} min read</span>
@@ -31,6 +31,6 @@ layout: default
   </div>
 
   <footer class="article-footer">
-    <a class="btn btn-secondary" href="{{ '/notes/' | relative_url }}">Back to notes</a>
+    <a class="btn btn-secondary" href="{{ '/posts/' | relative_url }}">Back to posts</a>
   </footer>
 </article>
