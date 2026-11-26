@@ -286,7 +286,8 @@ main {
   padding-block: 3.5rem 5rem;
 }
 
-.home-main {
+.home-main,
+.about-main {
   padding-top: 1.5rem;
 }
 
@@ -983,7 +984,8 @@ a.chip:hover {
 
 /* Hero content is above the fold, so it should never start hidden. */
 .hero-copy.reveal,
-.hero-panel.reveal {
+.hero-panel.reveal,
+.about-hero .reveal {
   opacity: 1;
   transform: none;
 }
@@ -1484,8 +1486,8 @@ a.chip:hover {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: clamp(2rem, 6vw, 5rem);
-  align-items: center;
-  padding-block: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+  padding-block: clamp(0.5rem, 2vw, 1.5rem) clamp(2.5rem, 6vw, 5rem);
 }
 
 .about-statement {

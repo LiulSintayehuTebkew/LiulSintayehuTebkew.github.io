@@ -14,7 +14,7 @@
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
-  <main id="main"{% if page.url == '/' %} class="home-main"{% endif %} tabindex="-1">{{ content }}</main>
+  <main id="main"{% if page.url == '/' %} class="home-main"{% elsif page.url == '/about/' %} class="about-main"{% endif %} tabindex="-1">{{ content }}</main>
   {% include footer.html %}
 </body>
 </html>
