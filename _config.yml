@@ -111,15 +111,6 @@ compress_html:
   ignore:
     envs: [development]
 
-asset_sources: &asset_sources
-  css: /assets/css/jekyll-theme-chirpy.css
-  js:
-    - /assets/js/dist/theme.min.js
-    - /assets/js/dist/page.min.js
-    - /app.min.js?baseurl={{ site.baseurl }}&register=true
-
-cache_bust_version: 20261126
-
 exclude:
   - "*.gem"
   - "*.gemspec"
