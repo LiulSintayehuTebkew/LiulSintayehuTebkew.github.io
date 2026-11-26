@@ -1,39 +1,38 @@
-# Chirpy Starter
+# Liul Sintayehu Tebkew — Portfolio
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student. The site is built with the custom **Sentinel** theme: no service worker, no external CSS/JS/CDNs, and no analytics by default.
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+## Structure
 
-## Why This Starter Exists
+- `index.html` — landing page with professional focus, categories, and recent work.
+- `_tabs/` — About, Projects, Categories, Archives, and Tags pages.
+- `_posts/` — project write-ups. Add new posts with `categories` slugs from `portfolio_categories` in `_config.yml`.
+- `categories/` — explicit category archive pages.
+- `_layouts/` and `_includes/` — the Sentinel theme.
+- `assets/css/style.css` and `assets/js/main.js` — all styling and behavior, self-hosted.
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
+## Categories
 
-To unlock all features, the following files must be present in your Jekyll site:
+Categories are defined once in `_config.yml` under `portfolio_categories`. Each entry has a `slug`, display `name`, `icon`, and `description`. To file a post or project under a category, add the slug to its `categories` list:
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```yaml
+categories: [cybersecurity, security-operations, threat-detection]
 ```
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+The Projects page uses the same slugs for its category filters.
 
-## Usage
+## Security choices
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+- No service worker registration; `sw.min.js` is a one-time cleanup worker only.
+- Strict per-page Content Security Policy allowing only same-origin assets.
+- No external fonts, icons, analytics, comment systems, or script CDNs.
+- All external links use `rel="noopener noreferrer"`.
 
-## Contributing
+## Local development
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Deployments are handled by GitHub Actions on pushes to `main`.

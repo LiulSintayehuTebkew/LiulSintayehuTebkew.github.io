@@ -1,0 +1,14 @@
+<div class="grid category-grid">
+  {% for category in site.portfolio_categories %}
+    {% assign post_count = site.posts | where: 'categories', category.slug | size %}
+    {% assign page_count = site.tabs | where: 'categories', category.slug | size %}
+    {% assign total = post_count | plus: page_count %}
+
+    <a class="category-card" href="{{ '/categories/' | relative_url }}{{ category.slug }}/">
+      <span class="category-icon" aria-hidden="true">{{ category.icon | escape }}</span>
+      <h2>{{ category.name | escape }}</h2>
+      <p>{{ category.description | escape }}</p>
+      <span class="category-count">{{ total }} item{% unless total == 1 %}s{% endunless %}</span>
+    </a>
+  {% endfor %}
+</div>

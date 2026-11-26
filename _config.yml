@@ -1,78 +1,48 @@
-# The Site Configuration
-theme: jekyll-theme-chirpy
-
+# Site settings
 lang: en
 timezone: Europe/Skopje
-
 title: Liul Sintayehu Tebkew
 tagline: Cybersecurity • AI for Security • Technical Projects
-description: >
+description: >-
   Cybersecurity graduate-level portfolio featuring hands-on security labs,
   SOC investigation, threat detection, networking, and applied AI projects.
-
 url: "https://LiulSintayehuTebkew.github.io"
 baseurl: ""
+email: ""
 
 github:
   username: LiulSintayehuTebkew
 
-social:
-  name: Liul Sintayehu Tebkew
-  email:
-  links:
-    - https://github.com/LiulSintayehuTebkew
-
-theme_mode:
-toc: true
-
-# Chirpy site settings
-paginate: 10
-
-# Keep the theme's built-in defaults for comments, analytics, and page views.
-comments:
-  provider:
-
-analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-  umami:
-    id:
-    domain:
-  matomo:
-    id:
-    domain:
-  cloudflare:
-    id:
-  fathom:
-    id:
-
-pageviews:
-  provider:
-
-actions:
-  edit_post:
-    enabled: false
-    url: ""
-    static_url: false
-
-pwa:
-  enabled: true
-  cache:
-    enabled: false
-    deny_paths:
-
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+# Lightweight, dependency-free category taxonomy.
+portfolio_categories:
+  - slug: cybersecurity
+    name: Cybersecurity
+    icon: CS
+    description: The complete collection of security projects, labs, and investigations.
+  - slug: security-operations
+    name: Security Operations
+    icon: SO
+    description: SIEM monitoring, alert triage, incident response, and SOC workflows.
+  - slug: threat-detection
+    name: Threat Detection
+    icon: TD
+    description: Detection engineering and investigation of suspicious activity.
+  - slug: detection-engineering
+    name: Detection Engineering
+    icon: DE
+    description: Practical detection logic for Windows, Active Directory, and SIEM data.
+  - slug: ai-security
+    name: AI for Security
+    icon: AI
+    description: Local language models and automation applied to security analysis.
+  - slug: network-security
+    name: Network Security
+    icon: NS
+    description: Packet analysis, malware traffic analysis, and network defense.
+  - slug: email-security
+    name: Email Security
+    icon: ES
+    description: Phishing analysis, email header inspection, and message threat intelligence.
 
 collections:
   tabs:
@@ -85,13 +55,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: false
-      toc: true
       permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
   - scope:
       path: ""
       type: tabs
@@ -99,34 +63,19 @@ defaults:
       layout: page
       permalink: /:title/
 
-sass:
-  style: compressed
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
 
 exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
+  - Gemfile
   - README.md
   - LICENSE
-  - purgecss.js
+  - docs
+  - tools
+  - "*.gem"
+  - "*.gemspec"
   - "*.config.js"
-  - "package*.json"
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+  - package.json
+  - package-lock.json

@@ -1,0 +1,30 @@
+{% assign card = include.item %}
+<article class="card"{% if card.categories %} data-categories="{{ card.categories | join: ' ' }}"{% endif %}>
+  <div class="card-meta">
+    {% if card.date %}
+      <time datetime="{{ card.date | date_to_xmlschema }}">{{ card.date | date: '%b %d, %Y' }}</time>
+    {% endif %}
+    {% if card.collection == 'tabs' %}
+      <span class="chip chip-accent">Project / Page</span>
+    {% endif %}
+  </div>
+
+  <h3><a href="{{ card.url | relative_url }}">{{ card.title | escape }}</a></h3>
+
+  {% assign summary = card.description | default: card.excerpt | strip_html | strip_newlines | truncate: 180 %}
+  {% if summary and summary != empty %}
+    <p>{{ summary | escape }}</p>
+  {% endif %}
+
+  {% if card.categories or card.tags %}
+    <ul class="chip-list">
+      {% for category in card.categories %}
+        {% assign cat = site.portfolio_categories | where: 'slug', category | first %}
+        <li><a class="chip chip-accent" href="{{ '/categories/' | relative_url }}{{ category }}/">{{ cat.name | default: category | escape }}</a></li>
+      {% endfor %}
+      {% for tag in card.tags %}
+        <li><span class="chip">#{{ tag | escape }}</span></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>

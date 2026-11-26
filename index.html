@@ -1,56 +1,137 @@
 ---
-layout: page
+layout: default
 title: Portfolio
 permalink: /
 ---
 
-<section class="dashboard-hero">
-  <div class="dashboard-intro">
+<section class="container hero">
+  <div>
     <p class="eyebrow">PROFESSIONAL PROFILE / 2026</p>
-    <h1>Liul Sintayehu<br><span>Tebkew</span></h1>
+    <h1>Liul Sintayehu<br><span class="gradient-text">Tebkew</span></h1>
     <h2>Cybersecurity Master's Student</h2>
-    <p class="dashboard-summary">Computer Science graduate specializing in Applied Cybersecurity, with interests in Security Operations, Threat Detection, AI for Security, and Digital Trust.</p>
-    <div class="dashboard-actions">
-      <a class="portfolio-button" href="/about/">Explore my profile <span>→</span></a>
-      <a class="text-link" href="https://github.com/LiulSintayehuTebkew" target="_blank" rel="noopener">GitHub profile ↗</a>
+    <p class="lede">Computer Science graduate specializing in Applied Cybersecurity, with interests in Security Operations, Threat Detection, AI for Security, and Digital Trust.</p>
+    <div class="hero-actions">
+      <a class="btn" href="{{ '/about/' | relative_url }}">Explore my profile →</a>
+      <a class="btn btn-secondary" href="https://github.com/LiulSintayehuTebkew" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
     </div>
   </div>
-  <aside class="identity-panel">
-    <div class="identity-top"><span class="identity-mark">LS</span><span class="identity-status"><i></i> OPEN TO PROFESSIONAL CONNECTIONS</span></div>
-    <p class="identity-label">CURRENT PROGRAM</p>
-    <h3>Erasmus Mundus Joint Master's</h3>
+
+  <aside class="profile-card" aria-label="Professional snapshot">
+    <div class="avatar" aria-hidden="true">LS</div>
+    <p class="profile-role"><strong>OPEN TO PROFESSIONAL CONNECTIONS</strong></p>
+    <p class="eyebrow">CURRENT PROGRAM</p>
+    <h3 class="profile-name">Erasmus Mundus Joint Master's</h3>
     <p>Applied Cybersecurity<br><strong>CyberMACS</strong></p>
-    <div class="identity-divider"></div>
-    <div class="identity-details"><div><span>ACADEMIC BASE</span><strong>Computer Science</strong></div><div><span>LOCATION</span><strong>Skopje, North Macedonia</strong></div><div><span>PROFESSIONAL INTEREST</span><strong>Cybersecurity & Security Engineering</strong></div></div>
+    <div class="stat-grid">
+      <div class="stat"><span>ACADEMIC BASE</span><strong>Computer Science</strong></div>
+      <div class="stat"><span>LOCATION</span><strong>Skopje, North Macedonia</strong></div>
+      <div class="stat"><span>PROFESSIONAL INTEREST</span><strong>Cybersecurity &amp; Security Engineering</strong></div>
+    </div>
   </aside>
 </section>
 
-<section class="dashboard-section">
-  <div class="dashboard-section-heading"><div><p class="eyebrow">PROFESSIONAL FOCUS</p><h2>What I specialize in</h2></div><p>Core domains shaping my academic development and professional direction.</p></div>
-  <div class="specialty-grid">
-    <article class="specialty-card"><span class="specialty-index">01</span><div><h3>Security Operations</h3><p>SIEM monitoring, log analysis, alert triage, incident investigation, and SOC workflows.</p><div class="mini-tags"><span>SIEM</span><span>Incident Response</span><span>Threat Detection</span></div></div></article>
-    <article class="specialty-card"><span class="specialty-index">02</span><div><h3>Network & Infrastructure Security</h3><p>Network fundamentals, Windows environments, Active Directory, and defensive monitoring.</p><div class="mini-tags"><span>Networking</span><span>Windows</span><span>Active Directory</span></div></div></article>
-    <article class="specialty-card"><span class="specialty-index">03</span><div><h3>AI for Cybersecurity</h3><p>Exploring practical uses of AI to support security analysis, investigation, and reporting.</p><div class="mini-tags"><span>Python</span><span>LLMs</span><span>SOC Automation</span></div></div></article>
-    <article class="specialty-card"><span class="specialty-index">04</span><div><h3>Digital Trust & Cryptography</h3><p>Identity, authentication, privacy, cryptographic systems, and trusted digital services.</p><div class="mini-tags"><span>Cryptography</span><span>Identity</span><span>Privacy</span></div></div></article>
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">PROFESSIONAL FOCUS</p>
+      <h2 class="section-title">What I specialize in</h2>
+    </div>
+    <p>Core domains shaping my academic development and professional direction.</p>
+  </div>
+
+  <div class="grid grid-2">
+    <article class="card">
+      <span class="category-icon" aria-hidden="true">01</span>
+      <h3>Security Operations</h3>
+      <p>SIEM monitoring, log analysis, alert triage, incident investigation, and SOC workflows.</p>
+      <ul class="chip-list"><li class="chip">SIEM</li><li class="chip">Incident Response</li><li class="chip">Threat Detection</li></ul>
+    </article>
+    <article class="card">
+      <span class="category-icon" aria-hidden="true">02</span>
+      <h3>Network &amp; Infrastructure Security</h3>
+      <p>Network fundamentals, Windows environments, Active Directory, and defensive monitoring.</p>
+      <ul class="chip-list"><li class="chip">Networking</li><li class="chip">Windows</li><li class="chip">Active Directory</li></ul>
+    </article>
+    <article class="card">
+      <span class="category-icon" aria-hidden="true">03</span>
+      <h3>AI for Cybersecurity</h3>
+      <p>Exploring practical uses of AI to support security analysis, investigation, and reporting.</p>
+      <ul class="chip-list"><li class="chip">Python</li><li class="chip">LLMs</li><li class="chip">SOC Automation</li></ul>
+    </article>
+    <article class="card">
+      <span class="category-icon" aria-hidden="true">04</span>
+      <h3>Digital Trust &amp; Cryptography</h3>
+      <p>Identity, authentication, privacy, cryptographic systems, and trusted digital services.</p>
+      <ul class="chip-list"><li class="chip">Cryptography</li><li class="chip">Identity</li><li class="chip">Privacy</li></ul>
+    </article>
   </div>
 </section>
 
-<section class="dashboard-lower">
-  <div class="dashboard-section education-section">
-    <p class="eyebrow">EDUCATION</p><h2>Academic foundation</h2>
-    <div class="timeline-entry"><span class="timeline-dot"></span><div><span class="timeline-date">CURRENT · ERASMUS MUNDUS</span><h3>Master's in Applied Cybersecurity</h3><p>CyberMACS — Kadir Has University and Ss. Cyril and Methodius University (UKIM).</p></div></div>
-    <div class="timeline-entry"><span class="timeline-dot"></span><div><span class="timeline-date">2023</span><h3>BSc in Computer Science</h3><p>Arba Minch University Institute of Technology. Gold medalist, ranked first in class, GPA 3.97/4.00.</p></div></div>
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">EXPLORE BY CATEGORY</p>
+      <h2 class="section-title">Browse the work</h2>
+    </div>
+    <p>Find projects and write-ups by the security domain they belong to.</p>
   </div>
-  <div class="dashboard-section credentials-section">
-    <p class="eyebrow">CREDENTIALS</p><h2>Certifications</h2>
-    <div class="credential-item"><span class="credential-symbol">CC</span><div><h3>Cisco Certified Network Associate</h3><p>CCNA</p></div></div>
-    <div class="credential-item"><span class="credential-symbol">G</span><div><h3>Google Cybersecurity</h3><p>Coursera certificate</p></div></div>
-    <div class="credential-item"><span class="credential-symbol">IBM</span><div><h3>IBM Cybersecurity</h3><p>Coursera certificate</p></div></div>
-    <div class="credential-item"><span class="credential-symbol">MS</span><div><h3>Microsoft Cybersecurity</h3><p>Coursera certificate</p></div></div>
+  {% include category-grid.html %}
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">RECENT WORK</p>
+      <h2 class="section-title">Latest projects</h2>
+    </div>
+    <a class="card-link" href="{{ '/archives/' | relative_url }}">View all projects →</a>
+  </div>
+  <div class="grid grid-3">
+    {% for post in site.posts limit: 3 %}
+      {% include card.html item=post %}
+    {% endfor %}
   </div>
 </section>
 
-<section class="development-strip">
-  <div><p class="eyebrow">CURRENT DEVELOPMENT</p><h2>Learning with a practical mindset.</h2><p>Strengthening my foundations in security monitoring, cryptography, and applied cybersecurity while translating concepts into hands-on work.</p></div>
-  <a class="portfolio-button portfolio-button-light" href="/about/">More about me <span>→</span></a>
+<section class="container section">
+  <div class="grid grid-2">
+    <div class="card">
+      <p class="eyebrow">EDUCATION</p>
+      <h3>Academic foundation</h3>
+      <div class="stat">
+        <span>CURRENT · ERASMUS MUNDUS</span>
+        <strong>Master's in Applied Cybersecurity</strong>
+        <p>CyberMACS — Kadir Has University and Ss. Cyril and Methodius University (UKIM).</p>
+      </div>
+      <div class="stat">
+        <span>2023</span>
+        <strong>BSc in Computer Science</strong>
+        <p>Arba Minch University Institute of Technology. Gold medalist, ranked first in class, GPA 3.97/4.00.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">CREDENTIALS</p>
+      <h3>Certifications</h3>
+      <ul class="contact-list">
+        <li><span class="contact-icon">CC</span><span><strong>Cisco Certified Network Associate</strong><br>CCNA</span></li>
+        <li><span class="contact-icon">G</span><span><strong>Google Cybersecurity</strong><br>Coursera certificate</span></li>
+        <li><span class="contact-icon">IBM</span><span><strong>IBM Cybersecurity</strong><br>Coursera certificate</span></li>
+        <li><span class="contact-icon">MS</span><span><strong>Microsoft Cybersecurity</strong><br>Coursera certificate</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="card">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">CURRENT DEVELOPMENT</p>
+        <h2>Learning with a practical mindset.</h2>
+        <p>Strengthening my foundations in security monitoring, cryptography, and applied cybersecurity while translating concepts into hands-on work.</p>
+      </div>
+      <a class="btn" href="{{ '/about/' | relative_url }}">More about me →</a>
+    </div>
+  </div>
 </section>

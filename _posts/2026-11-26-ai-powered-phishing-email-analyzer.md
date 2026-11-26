@@ -1,7 +1,7 @@
 ---
 title: AI-Powered Phishing Email Analyzer
 date: 2026-11-26
-categories: [Cybersecurity]
+categories: [cybersecurity, ai-security, email-security]
 tags: [AI, Phishing, Email Security, Python, Ollama]
 ---
 
