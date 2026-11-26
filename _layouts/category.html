@@ -20,13 +20,13 @@ layout: default
 
 <div class="container">
   <header class="page-head">
-    <a class="back-link" href="{{ '/categories/' | relative_url }}">← All categories</a>
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">← All project categories</a>
     <h1>{{ category_name | escape }}</h1>
     <p>{{ category_description | escape }}</p>
   </header>
 
   {% if items.size > 0 %}
-    <div class="grid grid-2" data-filter-target>
+    <div class="grid grid-2">
       {% for item in items %}
         {% include card.html item=item %}
       {% endfor %}

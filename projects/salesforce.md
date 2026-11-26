@@ -2,5 +2,5 @@
 layout: category
 title: Salesforce
 category: salesforce
-permalink: /categories/salesforce/
+permalink: /projects/salesforce/
 ---

@@ -5,10 +5,10 @@ A modern, dependency-free Jekyll portfolio for a cybersecurity graduate student.
 ## Structure
 
 - `index.html` — landing page with professional focus, categories, and recent work.
-- `_tabs/` — About, Projects, Categories, Notes, and Tags pages.
+- `_tabs/` — About, Projects, Notes, and Tags pages.
 - `_posts/` — project write-ups. Add new posts with `categories` slugs from `portfolio_categories` in `_config.yml`.
 - `_notes/` — Medium-style notes. Each Markdown file becomes a note page.
-- `categories/` — explicit category archive pages.
+- `projects/` — category pages nested under `/projects/`.
 - `_layouts/` and `_includes/` — the Sentinel theme.
 - `assets/css/style.css` and `assets/js/main.js` — all styling and behavior, self-hosted.
 
@@ -22,7 +22,7 @@ categories: [cybersecurity]
 
 The four current categories are `cybersecurity`, `networking`, `salesforce`, and `data-analysis`. For now, only Cybersecurity has projects; the others show friendly empty states.
 
-The Projects page uses the same slugs for its category filters.
+The Projects navigation uses one dropdown containing those four categories. The `/projects/` page is only a category index; there is no separate all-projects page.
 
 ## Notes
 

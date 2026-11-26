@@ -67,6 +67,35 @@
     });
   }
 
+  const projectsToggle = document.querySelector('[data-projects-toggle]');
+  const projectsItem = document.querySelector('.nav-projects');
+
+  if (projectsToggle && projectsItem) {
+    projectsToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const open = projectsToggle.getAttribute('aria-expanded') === 'true';
+      projectsToggle.setAttribute('aria-expanded', String(!open));
+      projectsItem.classList.toggle('is-open', !open);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!projectsItem.contains(event.target)) {
+        projectsToggle.setAttribute('aria-expanded', 'false');
+        projectsItem.classList.remove('is-open');
+      }
+    });
+
+    projectsItem.addEventListener('mouseenter', () => {
+      projectsToggle.setAttribute('aria-expanded', 'true');
+    });
+
+    projectsItem.addEventListener('mouseleave', () => {
+      if (!projectsItem.classList.contains('is-open')) {
+        projectsToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   const filterButtons = Array.from(document.querySelectorAll('[data-filter]'));
   const filterScope = document.querySelector('[data-filter-target]');
 

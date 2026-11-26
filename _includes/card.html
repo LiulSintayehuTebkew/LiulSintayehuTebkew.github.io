@@ -20,7 +20,7 @@
     <ul class="chip-list">
       {% for category in card.categories %}
         {% assign cat = site.portfolio_categories | where: 'slug', category | first %}
-        <li><a class="chip chip-accent" href="{{ '/categories/' | relative_url }}{{ category }}/">{{ cat.name | default: category | escape }}</a></li>
+        <li><a class="chip chip-accent" href="{{ '/projects/' | relative_url }}{{ category }}/">{{ cat.name | default: category | escape }}</a></li>
       {% endfor %}
       {% for tag in card.tags %}
         <li><span class="chip">#{{ tag | escape }}</span></li>
