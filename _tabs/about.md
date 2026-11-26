@@ -38,7 +38,7 @@ shell: false
 
     <div class="background-grid">
       <div class="prose reveal">
-        I graduated in **Computer Science from Arba Minch University Institute of Technology, Ethiopia** in 2023, finishing first in my class with a **3.97/4.00 GPA** and earning the university's gold medal.
+        I studied **Computer Science at Arba Minch University Institute of Technology, Ethiopia**, finishing first in my class in 2023 with a **3.97/4.00 GPA** and earning the university's gold medal.
 
         I am now pursuing the **Erasmus Mundus Joint Master’s in Applied Cybersecurity (CyberMACS)**. My studies have taken me from **Kadir Has University in Istanbul** to **Ss. Cyril and Methodius University (UKIM) in Skopje**, where I am developing a deeper foundation in cybersecurity, cryptography, privacy, and digital trust.
       </div>
