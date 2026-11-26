@@ -120,7 +120,10 @@ shell: false
           <h3>Let’s connect</h3>
           <p>Interested in cybersecurity, SOC work, cryptography, or collaborating on practical projects?</p>
         </div>
-        <a class="btn" href="https://github.com/LiulSintayehuTebkew" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
+        <div class="about-cta-actions">
+          <a class="btn" href="https://linkedin.com/in/liul-sintayehu-tebkew/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/LiulSintayehuTebkew" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
+        </div>
       </div>
     </div>
   </section>
