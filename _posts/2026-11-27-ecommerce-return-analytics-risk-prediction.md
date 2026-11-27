@@ -1,5 +1,5 @@
 ---
-title: E-Commerce Return Analytics and Risk Prediction
+title: E-Commerce Return Analytics and ML-Based Risk Prediction
 date: 2026-11-27T11:00:00+00:00
 description: "SQL, Python, machine learning, and Power BI analysis of e-commerce returns, financial losses, and return risk."
 categories: [data-analysis]
