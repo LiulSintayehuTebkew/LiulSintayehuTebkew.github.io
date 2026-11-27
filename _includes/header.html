@@ -16,20 +16,7 @@
       <ul class="nav-list">
         <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
         <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
-        <li class="nav-projects">
-          <div class="projects-nav">
-            <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a>
-            <button class="projects-toggle" type="button" data-projects-toggle aria-expanded="false" aria-controls="projects-menu" aria-label="Show project categories">
-              <span aria-hidden="true">▾</span>
-            </button>
-          </div>
-          <div class="projects-menu" id="projects-menu">
-            {% for category in site.portfolio_categories %}
-              {% assign category_url = '/projects/' | append: category.slug | append: '/' %}
-              <a href="{{ category_url | relative_url }}"{% if page.url == category_url %} aria-current="page"{% endif %}>{{ category.name | escape }}</a>
-            {% endfor %}
-          </div>
-        </li>
+        <li><a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
         <li><a href="{{ '/posts/' | relative_url }}"{% if page.url contains '/posts/' %} aria-current="page"{% endif %}>Posts</a></li>
       </ul>
     </nav>

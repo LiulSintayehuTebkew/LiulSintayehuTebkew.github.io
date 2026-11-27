@@ -1,0 +1,55 @@
+<div class="category-tabs">
+  <div class="category-tablist" role="tablist" aria-label="Project categories">
+    {% for category in site.portfolio_categories %}
+      {% assign tab_id = 'category-tab-' | append: category.slug %}
+      {% assign panel_id = 'category-panel-' | append: category.slug %}
+      <button
+        class="category-tab"
+        type="button"
+        role="tab"
+        id="{{ tab_id }}"
+        aria-controls="{{ panel_id }}"
+        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+        tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+        data-category-tab
+      >{{ category.name | escape }}</button>
+    {% endfor %}
+  </div>
+
+  {% for category in site.portfolio_categories %}
+    {% assign is_first = forloop.first %}
+    {% assign tab_id = 'category-tab-' | append: category.slug %}
+    {% assign panel_id = 'category-panel-' | append: category.slug %}
+
+    {% assign items = '' | split: '' %}
+    {% for post in site.posts %}
+      {% if post.categories contains category.slug or post.category == category.slug %}
+        {% assign items = items | push: post %}
+      {% endif %}
+    {% endfor %}
+    {% for tab in site.tabs %}
+      {% if tab.categories contains category.slug or tab.category == category.slug %}
+        {% assign items = items | push: tab %}
+      {% endif %}
+    {% endfor %}
+
+    <div
+      class="category-tabpanel"
+      role="tabpanel"
+      id="{{ panel_id }}"
+      aria-labelledby="{{ tab_id }}"
+      {% unless is_first %}hidden{% endunless %}
+    >
+      <p class="category-tab-description">{{ category.description | escape }}</p>
+      {% if items.size > 0 %}
+        <div class="grid grid-2">
+          {% for item in items %}
+            {% include card.html item=item %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="empty-state">No items are filed under this category yet.</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

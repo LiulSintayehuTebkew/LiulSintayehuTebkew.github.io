@@ -67,32 +67,34 @@
     });
   }
 
-  const projectsToggle = document.querySelector('[data-projects-toggle]');
-  const projectsItem = document.querySelector('.nav-projects');
+  const categoryTabs = Array.from(document.querySelectorAll('[data-category-tab]'));
 
-  if (projectsToggle && projectsItem) {
-    projectsToggle.addEventListener('click', (event) => {
-      event.stopPropagation();
-      const open = projectsToggle.getAttribute('aria-expanded') === 'true';
-      projectsToggle.setAttribute('aria-expanded', String(!open));
-      projectsItem.classList.toggle('is-open', !open);
-    });
+  if (categoryTabs.length) {
+    const selectTab = (tab) => {
+      categoryTabs.forEach((item) => {
+        const selected = item === tab;
+        item.setAttribute('aria-selected', String(selected));
+        item.tabIndex = selected ? 0 : -1;
+        const panel = document.getElementById(item.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !selected;
+      });
+    };
 
-    document.addEventListener('click', (event) => {
-      if (!projectsItem.contains(event.target)) {
-        projectsToggle.setAttribute('aria-expanded', 'false');
-        projectsItem.classList.remove('is-open');
-      }
-    });
-
-    projectsItem.addEventListener('mouseenter', () => {
-      projectsToggle.setAttribute('aria-expanded', 'true');
-    });
-
-    projectsItem.addEventListener('mouseleave', () => {
-      if (!projectsItem.classList.contains('is-open')) {
-        projectsToggle.setAttribute('aria-expanded', 'false');
-      }
+    categoryTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = null;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % categoryTabs.length;
+        if (event.key === 'ArrowLeft') nextIndex = (index - 1 + categoryTabs.length) % categoryTabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = categoryTabs.length - 1;
+        if (nextIndex !== null) {
+          event.preventDefault();
+          const next = categoryTabs[nextIndex];
+          selectTab(next);
+          next.focus();
+        }
+      });
     });
   }
 

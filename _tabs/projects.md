@@ -13,7 +13,7 @@ shell: false
     <p>Hands-on work focused on security monitoring, investigation, and detection engineering. Choose a category to explore the documented work.</p>
   </header>
 
-  <div class="reveal">{% include category-grid.html %}</div>
+  <div class="reveal">{% include category-tabs.html %}</div>
 
   <p class="lede">More projects and technical write-ups will be added as they are documented.</p>
 </div>
