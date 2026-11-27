@@ -19,10 +19,6 @@ portfolio_categories:
     name: Cybersecurity
     icon: CS
     description: Security projects, labs, monitoring, and investigation write-ups.
-  - slug: networking
-    name: Networking
-    icon: NW
-    description: Networking projects and infrastructure work will appear here.
   - slug: salesforce
     name: Salesforce
     icon: SF
