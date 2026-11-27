@@ -1,6 +1,6 @@
 ---
 title: SQL E-Commerce Sales Analysis
-date: 2026-11-27T08:00:00+00:00
+date: 2026-11-27T10:00:00+00:00
 description: "PostgreSQL analysis of e-commerce sales, profitability, customer value, and performance against targets."
 categories: [data-analysis]
 tags: [PostgreSQL, SQL, E-Commerce, Sales Analysis, Profitability]

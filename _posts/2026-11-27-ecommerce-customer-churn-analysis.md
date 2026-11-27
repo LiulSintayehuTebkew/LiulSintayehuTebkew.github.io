@@ -1,6 +1,6 @@
 ---
 title: E-Commerce Customer Churn Analysis
-date: 2026-11-27T11:00:00+00:00
+date: 2026-11-27T08:00:00+00:00
 description: "Excel analysis of 50,000 e-commerce customers: engagement, cart abandonment, service interactions, and churn."
 categories: [data-analysis]
 tags: [Excel, Churn Analysis, E-Commerce, Pivot Tables, Dashboards]

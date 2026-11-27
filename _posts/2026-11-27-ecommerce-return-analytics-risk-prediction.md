@@ -1,6 +1,6 @@
 ---
 title: E-Commerce Return Analytics and Risk Prediction
-date: 2026-11-27T10:00:00+00:00
+date: 2026-11-27T11:00:00+00:00
 description: "SQL, Python, machine learning, and Power BI analysis of e-commerce returns, financial losses, and return risk."
 categories: [data-analysis]
 tags: [Python, SQL, Machine Learning, Power BI, E-Commerce]
@@ -34,4 +34,4 @@ An end-to-end analytics and machine learning project investigating e-commerce re
 
 ## View the Project
 
-<a href="https://github.com/LiulSintayehuTebkew/data-analysis-projects/tree/main/Return%20Analytics%20%26%20ML-Based%20Risk%20Prediction" target="_blank" rel="noopener noreferrer">View project on GitHub</a>
+<a href="https://github.com/LiulSintayehuTebkew/data-analysis-projects/tree/main/E-Commerce%20Return%20Analytics%20%26%20ML-Based%20Risk%20Prediction" target="_blank" rel="noopener noreferrer">View project on GitHub</a>
