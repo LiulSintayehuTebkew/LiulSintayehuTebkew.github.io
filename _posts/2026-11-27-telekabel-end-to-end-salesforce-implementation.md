@@ -34,4 +34,4 @@ An end-to-end Salesforce implementation for Telekabel, a telecom provider, cover
 
 ## Salesforce Trailblazer
 
-[View my Salesforce Trailblazer profile](https://www.salesforce.com/trailblazer/profile)
+<a href="https://www.salesforce.com/trailblazer/profile" target="_blank" rel="noopener noreferrer">View my Salesforce Trailblazer profile</a>

@@ -33,4 +33,4 @@ A Governance, Risk, and Compliance application built on Salesforce. It connects 
 
 ## Salesforce Trailblazer
 
-[View my Salesforce Trailblazer profile](https://www.salesforce.com/trailblazer/profile)
+<a href="https://www.salesforce.com/trailblazer/profile" target="_blank" rel="noopener noreferrer">View my Salesforce Trailblazer profile</a>
