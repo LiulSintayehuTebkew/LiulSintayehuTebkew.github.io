@@ -26,7 +26,6 @@ A Governance, Risk, and Compliance application built on Salesforce. It connects 
 
 ## Technologies
 
-- Salesforce DX and Salesforce CLI
 - Custom objects and junction objects
 - Record-triggered Flows
 - Validation rules and page layouts

@@ -8,7 +8,7 @@ tags: [Salesforce, Telekabel, Sales Cloud, Service Cloud, Lightning, Flow]
 
 ## Overview
 
-An end-to-end Salesforce implementation for Telekabel, a telecom provider, covering the customer lifecycle from opportunity and subscription through installation, support, and reporting. The solution was built as source-driven Salesforce DX metadata so the configuration could be version-controlled and deployed between orgs.
+An end-to-end Salesforce implementation for Telekabel, a telecom provider, covering the customer lifecycle from opportunity and subscription through installation, support, and reporting.
 
 ## What I Built
 
@@ -26,7 +26,6 @@ An end-to-end Salesforce implementation for Telekabel, a telecom provider, cover
 
 ## Technologies
 
-- Salesforce DX and Salesforce CLI
 - Lightning App Builder and Lightning record pages
 - Custom objects, fields, and relationships
 - Record-triggered and scheduled Flows

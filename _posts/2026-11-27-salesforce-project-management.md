@@ -26,7 +26,6 @@ A project management workspace built on Salesforce to plan work, assign ownershi
 
 ## Technologies
 
-- Salesforce DX and Salesforce CLI
 - Lightning apps, pages, and custom tabs
 - Custom objects and master-detail relationships
 - Scheduled Flows and validation rules
