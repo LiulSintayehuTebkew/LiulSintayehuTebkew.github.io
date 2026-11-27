@@ -1,6 +1,6 @@
 ---
 title: Salesforce Project Management
-date: 2026-11-27T04:00:00+00:00
+date: 2026-11-27T03:00:00+00:00
 description: "A Salesforce project management app for tracking projects, tasks, ownership, status, and overdue work with dashboards."
 categories: [salesforce]
 tags: [Salesforce, Project Management, Lightning, Custom Objects, Flow, Dashboards]

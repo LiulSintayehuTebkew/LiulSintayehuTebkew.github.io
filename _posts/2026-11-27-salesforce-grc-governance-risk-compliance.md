@@ -1,6 +1,6 @@
 ---
 title: Salesforce GRC Governance, Risk, and Compliance
-date: 2026-11-27T03:00:00+00:00
+date: 2026-11-27T04:00:00+00:00
 description: "A Salesforce GRC app linking frameworks, controls, risks, audits, findings, evidence, and remediation in one place."
 categories: [salesforce]
 tags: [Salesforce, GRC, Governance, Risk, Compliance, Audit, Flow]
