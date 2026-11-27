@@ -96,6 +96,8 @@
         }
       });
     });
+
+    selectTab(categoryTabs[0]);
   }
 
   const filterButtons = Array.from(document.querySelectorAll('[data-filter]'));
