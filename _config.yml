@@ -26,7 +26,7 @@ portfolio_categories:
   - slug: data-analysis
     name: Data Analysis
     icon: DA
-    description: Data analysis projects and write-ups will appear here.
+    description: End-to-end data analytics projects in Excel, SQL, Python, and Power BI.
 
 collections:
   tabs:

@@ -20,7 +20,7 @@ Categories are defined once in `_config.yml` under `portfolio_categories`. Each 
 categories: [cybersecurity]
 ```
 
-The three current categories are `cybersecurity`, `salesforce`, and `data-analysis`. Cybersecurity and Salesforce have projects; Data Analysis shows a friendly empty state.
+The three current categories are `cybersecurity`, `salesforce`, and `data-analysis`. All three categories have projects.
 
 The Projects page groups work by those three categories. The `/projects/` page is only a category index; there is no separate all-projects page.
 
