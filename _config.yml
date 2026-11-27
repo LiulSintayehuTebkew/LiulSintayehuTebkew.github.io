@@ -22,7 +22,7 @@ portfolio_categories:
   - slug: salesforce
     name: Salesforce
     icon: SF
-    description: Salesforce projects and platform work will appear here.
+    description: End-to-end Salesforce implementations, custom apps, automation, and platform projects.
   - slug: data-analysis
     name: Data Analysis
     icon: DA

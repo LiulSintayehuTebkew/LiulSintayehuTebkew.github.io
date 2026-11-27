@@ -8,9 +8,9 @@ shell: false
 
 <div class="container">
   <header class="page-head">
-    <p class="eyebrow">CYBERSECURITY PORTFOLIO</p>
+    <p class="eyebrow">TECHNICAL PORTFOLIO</p>
     <h1>Projects</h1>
-    <p>Hands-on work focused on security monitoring, investigation, and detection engineering. Choose a category to explore the documented work.</p>
+    <p>Hands-on work across security, Salesforce, and data analysis. Choose a category to explore the documented work.</p>
   </header>
 
   <div class="reveal">{% include category-tabs.html %}</div>
